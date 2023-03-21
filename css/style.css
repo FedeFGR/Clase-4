@@ -1,0 +1,59 @@
+/*CSS=Cascade Style Sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+*{
+    font-family: 'Golos Text', sans-serif;
+}
+body{
+    background-color: rgb(200, 200, 200);
+}
+h1{
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 100px;
+    border-radius: 7px;
+    margin: 50px 5px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.418);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: aquamarine;
+    cursor:wait;
+}
+nav{
+    display: flex;
+    gap:50px;
+}
+@keyframes leftToRight{
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 5px greenyellow solid;
+    border-top: black dashed;
+    animation-name: leftToRight;
+    animation-duration: 4s;
+}
+
+.caja:hover{
+    background-color: aliceblue;
+    transition: 2s ease-in;
+    transform: rotate(360deg);
+}
